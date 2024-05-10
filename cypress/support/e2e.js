@@ -1,2 +1,2 @@
-import './cadastro_commands'
-import './login_commands'
+import './page_register'
+import './login_page'

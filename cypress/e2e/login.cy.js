@@ -1,6 +1,7 @@
 /// <reference types="Cypress" />
 
 import login_page from "../support/login_page/login_page";
+import { setViewport } from "../support/config/viewportConfig"
 
 const screens = ['desktop', 'iphone-xr', 'macbook-13']
 
@@ -8,13 +9,7 @@ screens.forEach(screen => {
   describe(`Login tests on ${screen}`, () => {
 
     beforeEach(() => {
-      if (screen === 'desktop') {
-        cy.viewport('macbook-15')
-      } else if (screen === 'iphone-xr') {
-        cy.viewport('iphone-xr')
-      } else if (screen === 'macbook-13') {
-        cy.viewport('macbook-13')
-      }
+      setViewport(screen);
     });
 
     it('Validando mensagem quando nao informa senha', () => {

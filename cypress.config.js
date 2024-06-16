@@ -5,8 +5,11 @@ module.exports = defineConfig({
   "video": false,
   e2e: {
     baseUrl: "https://automationpratice.com.br",
+    defoultCommandTimeout: 5000,
+    //viewportWidth: 335,
+    //viewportHeight: 555,
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+
     },
   },
 });

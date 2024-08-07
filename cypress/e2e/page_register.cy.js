@@ -2,7 +2,7 @@
 
 import page_register from '../support/page_register/page_register'
 import {setViewport} from "../support/config/viewportConfig";
-import login_page from '../support/login_page/login_page'
+// import login_page from '../support/login_page/login_page'
 
 const screens = ['desktop', 'iphone-xr', 'macbook-13']
 

@@ -1,5 +1,4 @@
 /// <reference types="Cypress" />
-
 import login_page from "../support/login_page/login_page";
 import { setViewport } from "../support/config/viewportConfig"
 
@@ -7,7 +6,6 @@ const screens = ['desktop', 'iphone-xr', 'macbook-13']
 
 screens.forEach(screen => {
   describe(`Login tests on ${screen}`, () => {
-
     beforeEach(() => {
       setViewport(screen);
     });
